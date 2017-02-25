@@ -1,0 +1,94 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAdmin.master.cs" Inherits="MasterAdmin" %>
+
+<html>
+<head>
+<title>Website Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="images/styles2.css" type="text/css">
+</head>
+
+<body bgcolor="#EEEEEE" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0")">
+    <form id="form1" runat="server">
+<table width="770" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr> 
+    <td style="padding-left:25px" style="font-size:50px" bgcolor="#0098D3" height="100" class="logo">ITI.com</td>
+  </tr>
+  <tr> 
+    <td background="images/top01.gif" height="23" align="center" class="menu">
+        <asp:HyperLink ID="Home" runat="server">Home</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="Registration" runat="server">Registration</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink1" runat="server">Students</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink2" runat="server">Instructors</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink3" runat="server">Departments</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink4" runat="server">Courses</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink5" runat="server">Topics</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink6" runat="server">Question</asp:HyperLink>
+&nbsp;- 
+        <asp:HyperLink ID="HyperLink7" runat="server">HyperLink</asp:HyperLink>
+      </td>
+  </tr>
+</table>
+<table width="770" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr> 
+          <td class="title" height="60" background="images/title_bg.gif" align="right" style="font-size:20px">Welcome
+              <asp:LoginName ID="LoginName1" runat="server" />
+            </td>
+        </tr>
+        <tr> 
+          <td valign="top" class="text"> 
+              &nbsp;</td>
+        </tr>
+      </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </td>
+    <td width="191" bgcolor="#E5E5E5" valign="top"><img src="images/top02.gif" width="191" height="87"><br>
+      <table width="150" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr> 
+          <td valign="top" height="50" class="text"><b>Lorem ipsum dolor sit amet, 
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.</b></td>
+        </tr>
+        <tr> 
+          <td valign="bottom" height="40"><font size="1" color="#666666" face="Verdana, Arial, Helvetica, sans-serif"><img src="images/newsletter.gif" width="122" height="21"></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" height="50"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="text">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td height="38"> 
+                      &nbsp;</td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="770" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td><img src="images/bottom_01.gif" width="770" height="6"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#E5E5E5" height="40" align="center"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#999999">Copyright 
+      &copy; 2005 ITI. All rights reserved. Designed by <a href="http://www.templateyes.com" class="designby" target="_blank">TemplateYes</a></font></td>
+  </tr>
+</table>
+    </form>
+</body>
+</html>
+

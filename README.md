@@ -1,2 +1,0 @@
-# ExaminationSystem
-ASP-Project

@@ -1,0 +1,56 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAnonymous.master.cs" Inherits="MasterAnonymous" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Company Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="images/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="container">
+  <div id="intro">
+    <div id="pageHeader">
+      <h1><span>ITI </span></h1>
+      <h2>Information Technologie Institute<span> </span></h2>
+    </div>
+    <div id="quickSummary">
+      <p class="p2"><span>Invidunt ut labore et <a href="#">dolore magna</a> aliquyam erat, sed diam voluptua sed diam voluptua.</span></p>
+      <p class="p1"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <a href="#">magna aliquyam</a> erat, sed diam voluptua.</span></p>
+    </div>
+    <div id="linkList">
+      <div id="linkList2">
+        <div id="lmenu">
+          <ul>
+            <li>
+                <asp:HyperLink ID="Homepage" runat="server" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink>
+              </li>
+            <li>&nbsp; </li>
+            <li>&nbsp;
+                <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+&nbsp;&nbsp;
+                <asp:HyperLink ID="Login" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+                &nbsp;&nbsp; </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <h3><span>About us </span></h3>
+      <p class="p1"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>
+      <p class="p2"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua consetetur sadipscing elitr.</span></p>
+      <p class="p3"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </span></p>
+    </div>
+  </div>
+  <div id="supportingText">
+    <div id="products">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">&copy; Copyright ITI. Designed by <a href="http://www.templateyes.com">TemplateYes</a></div>
+  </div>
+</div>
+    </form>
+</body>
+</html>
+
