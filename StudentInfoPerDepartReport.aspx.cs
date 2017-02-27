@@ -20,7 +20,7 @@ public partial class StudentInfoPerDepartReport : System.Web.UI.Page
     }
     private Students GetData()
     {
-        string conStr = "Data Source=DESKTOP-A4PGC7O\\MSSQLSERVER_EMAN;Initial Catalog=AdvSQL;Integrated Security=True";
+        string conStr = "Data Source=.;Initial Catalog=AdvSQL;Integrated Security=True";
 
         using (SqlConnection con = new SqlConnection(conStr))
         {
