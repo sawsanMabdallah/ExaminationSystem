@@ -22,10 +22,9 @@ public partial class GetExamQuestionByExid : System.Web.UI.Page
             DropDownList1.DataBind();
         }
     }
-
-    protected void ObjectDataSource2_Selecting(object sender, ObjectDataSourceSelectingEventArgs e)
+    protected void Button1_GetAllstudent_Click(object sender, EventArgs e)
     {
-        
+
         Response.Redirect("QuestionByExIdReport.aspx");
     }
 

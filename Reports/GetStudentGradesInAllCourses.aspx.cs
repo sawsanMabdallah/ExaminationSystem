@@ -5,11 +5,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class GetStudentAnswersWithModelAnswers : System.Web.UI.Page
+public partial class GetStudentGradesInAllCourses : System.Web.UI.Page
 {
+    ObjectDataSource obj;
     protected void Page_Load(object sender, EventArgs e)
     {
-      
+
         if (!IsPostBack)
         {
             obj = new ObjectDataSource();
@@ -26,7 +27,7 @@ public partial class GetStudentAnswersWithModelAnswers : System.Web.UI.Page
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
         Session.Add("Student_id", DropDownList1.SelectedValue);
-        
+
     }
 
     protected void Button1_GetAllstudent_Click(object sender, EventArgs e)
