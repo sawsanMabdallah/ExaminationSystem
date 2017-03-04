@@ -7,7 +7,7 @@
             <asp:Label ID="Label1" runat="server" Text="Course Name"></asp:Label>
         </td>
         <td>
-            <asp:DropDownList ID="DropDownListCRsName" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Crs_name" DataValueField="Crs_name">
+            <asp:DropDownList ID="DropDownListCRsName" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Crs_name" DataValueField="Crs_name" AutoPostBack="True">
             </asp:DropDownList>
         </td>
         <td>&nbsp;</td>
@@ -33,7 +33,7 @@
     <tr>
         <td style="width: 145px">&nbsp;</td>
         <td>
-            <asp:Button ID="btn_generate" runat="server" OnClick="btn_generate_Click" Text="Generate" />
+            <asp:Button ID="btn_generate" runat="server" OnClick="btn_generate_Click" Text="Generate" PostBackUrl="~/ExamPage.aspx" />
         </td>
         <td>&nbsp;</td>
     </tr>

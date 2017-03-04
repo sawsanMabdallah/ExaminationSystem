@@ -23,6 +23,10 @@ public partial class GenerateExam : System.Web.UI.Page
         obj.Insert();
         LabelMsg.Text += "Exam Generated";
         LabelMsg.Text += Environment.NewLine;
+        Session.Add("CourseName", DropDownListCRsName.SelectedValue);
+        Session.Add("MCQNumber",int.Parse(TextMCq.Text));
+        Session.Add("TFNumber", int.Parse(TextTF.Text));
+
 
     }
 }
