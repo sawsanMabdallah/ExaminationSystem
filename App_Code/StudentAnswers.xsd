@@ -12,10 +12,16 @@
   <xs:element name="StudentAnswers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1">
+        <xs:element name="DataTable1" msdata:Locale="en">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Q_body" type="xs:string" minOccurs="0" />
+              <xs:element name="Q_body" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="Q_Answer" type="xs:string" minOccurs="0" />
               <xs:element name="St_Answers" type="xs:string" minOccurs="0" />
             </xs:sequence>

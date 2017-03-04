@@ -8,19 +8,19 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class InsStuCrsReport : System.Web.UI.Page
+public partial class StudentGradesReport : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
         ReportDocument crp = new ReportDocument();
-        crp.Load(Server.MapPath("~/CrystalReportInsStuCrs.rpt"));
-        InsStuCrs dsStu = GetData();
+        crp.Load(Server.MapPath("~/CrystalReportStudentGrades.rpt"));
+        StudentGrades dsStu = GetData();
         crp.SetDataSource(dsStu);
         CrystalReportViewer1.ReportSource = crp;
     }
-    private InsStuCrs GetData()
+    private StudentGrades GetData()
     {
-        string conStr = ".;Initial Catalog=AdvSQL;Integrated Security=True";
+        string conStr = "Data Source= .;Initial Catalog=AdvSQL;Integrated Security=True";
 
         using (SqlConnection con = new SqlConnection(conStr))
         {
@@ -28,16 +28,16 @@ public partial class InsStuCrsReport : System.Web.UI.Page
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "ins_cources_st";
+                cmd.CommandText = "GetStudentGrade";
                 cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter par1 = new SqlParameter("@Ins_id", SqlDbType.Int, 4);
+                SqlParameter par1 = new SqlParameter("@St_id", SqlDbType.Int, 4);
                 cmd.Parameters.Add(par1);
-                par1.Value = int.Parse(Session["Ins_id_forReport"].ToString());
+                par1.Value = int.Parse(Session["Student_id"].ToString());
                 sda.SelectCommand = cmd;
-                using (InsStuCrs dsStudents = new InsStuCrs())
+                using (StudentGrades  dsSt = new StudentGrades())
                 {
-                    sda.Fill(dsStudents, "DataTable1");
-                    return dsStudents;
+                    sda.Fill(dsSt, "DataTable1");
+                    return dsSt;
                 }
             }
         }

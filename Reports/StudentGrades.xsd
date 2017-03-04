@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="Topic" targetNamespace="http://tempuri.org/Topic.xsd" xmlns:mstns="http://tempuri.org/Topic.xsd" xmlns="http://tempuri.org/Topic.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="StudentGrades" targetNamespace="http://tempuri.org/StudentGrades.xsd" xmlns:mstns="http://tempuri.org/StudentGrades.xsd" xmlns="http://tempuri.org/StudentGrades.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -9,14 +9,14 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="Topic" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+  <xs:element name="StudentGrades" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="DataTable1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Crs_id_x0020_" type="xs:string" minOccurs="0" />
-              <xs:element name="Top_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Crs_id" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

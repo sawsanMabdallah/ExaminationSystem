@@ -15,7 +15,7 @@
         <xs:element name="DataTable1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="instructor_name" type="xs:string" minOccurs="0" />
+              <xs:element name="ins_name" type="xs:string" minOccurs="0" />
               <xs:element name="number_x0020_of_x0020_student" type="xs:string" minOccurs="0" />
               <xs:element name="crs_name" type="xs:string" minOccurs="0" />
             </xs:sequence>

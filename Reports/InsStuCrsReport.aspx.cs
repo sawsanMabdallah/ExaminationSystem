@@ -8,19 +8,19 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class QuestionByExIdReport : System.Web.UI.Page
+public partial class InsStuCrsReport : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
         ReportDocument crp = new ReportDocument();
-        crp.Load(Server.MapPath("~/CrystalReportGetExamQuestionByExId.rpt"));
-        Question  dsStu = GetData();
+        crp.Load(Server.MapPath("~/CrystalReportInsStuCrs.rpt"));
+        InsStuCrs dsStu = GetData();
         crp.SetDataSource(dsStu);
         CrystalReportViewer1.ReportSource = crp;
     }
-    private Question GetData()
+    private InsStuCrs GetData()
     {
-        string conStr = "Data Source=. ;Initial Catalog=AdvSQL;Integrated Security=True";
+        string conStr = "Data Source= .;Initial Catalog=AdvSQL;Integrated Security=True";
 
         using (SqlConnection con = new SqlConnection(conStr))
         {
@@ -28,13 +28,13 @@ public partial class QuestionByExIdReport : System.Web.UI.Page
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "getQuestion";
+                cmd.CommandText = "ins_cources_st";
                 cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter par1 = new SqlParameter("@exid", SqlDbType.Int, 4);
+                SqlParameter par1 = new SqlParameter("@Ins_id", SqlDbType.Int, 4);
                 cmd.Parameters.Add(par1);
-                par1.Value = int.Parse(Session["Exam_id_forReport"].ToString());
+                par1.Value = int.Parse(Session["Ins_id_forReport"].ToString());
                 sda.SelectCommand = cmd;
-                using (Question dsStudents = new Question())
+                using (InsStuCrs dsStudents = new InsStuCrs())
                 {
                     sda.Fill(dsStudents, "DataTable1");
                     return dsStudents;
