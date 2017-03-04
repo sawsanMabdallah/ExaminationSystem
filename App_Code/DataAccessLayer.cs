@@ -12,6 +12,9 @@ public class DataAccessLayer
 {
     static SqlCommand com;
     static SqlConnection con = new SqlConnection("Data Source =.; Initial Catalog = AdvSQL; Integrated Security = True");
+
+
+
     public static DataSet RunSelect(string str)
     {
         com = new SqlCommand();
