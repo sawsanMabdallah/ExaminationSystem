@@ -32,7 +32,7 @@
                 </asp:GridView>
                 <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="SpecificStudent" TypeName="BussniessLayerStudents">
                     <SelectParameters>
-                        <asp:ControlParameter ControlID="DropDownList1" DefaultValue="St_id" Name="St_id" PropertyName="SelectedValue" Type="String" />
+                        <asp:ControlParameter ControlID="DropDownList1" Name="St_id" PropertyName="SelectedValue" Type="String" />
                     </SelectParameters>
                 </asp:ObjectDataSource>
             </td>

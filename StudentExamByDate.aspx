@@ -7,14 +7,13 @@
                 <asp:Label ID="Label1" runat="server" Text="Date:"></asp:Label>
                 &nbsp;</td>
             <td style="width: 30px">
-                <br />
-                <asp:TextBox ID="TextBox_date" runat="server" Width="124px"></asp:TextBox>
-&nbsp;<asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox_date" ErrorMessage="Date Format YYYY/MM/DD" MaximumValue="9999/12/28" MinimumValue="1000/12/28" Type="Date"></asp:RangeValidator>
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="Date" DataValueField="Date">
+                </asp:DropDownList>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="ExamDate" TypeName="BussniessLayerStudents"></asp:ObjectDataSource>
             </td>
             <td>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btn_search" runat="server" OnClick="btn_search_Click" Text="Search" />
-            </td>
+                </td>
         </tr>
         <tr>
             <td style="width: 124px">&nbsp;</td>
@@ -24,7 +23,7 @@
         <tr>
             <td style="width: 124px">&nbsp;</td>
             <td style="width: 30px">
-                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" AllowSorting="True" DataSourceID="ObjectDataSource2">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -37,6 +36,11 @@
                     <SortedDescendingCellStyle BackColor="#E9EBEF" />
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
+                <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="StudentExam" TypeName="BussniessLayerStudents">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="DropDownList1" Name="date" PropertyName="SelectedValue" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
             </td>
             <td>&nbsp;</td>
         </tr>

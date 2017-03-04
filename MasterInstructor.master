@@ -14,7 +14,7 @@
             height: 174px;
         }
         .auto-style3 {
-            width: 23px;
+            width: 150px;
         }
     </style>
 </head>
@@ -45,6 +45,14 @@
                   <tr>
                       <td class="auto-style3">
                           <asp:Menu ID="Menu1" runat="server">
+                              <Items>
+                                  <asp:MenuItem NavigateUrl="~/HomeInstructor.aspx" Text="Home " Value="Home "></asp:MenuItem>
+                                  <asp:MenuItem NavigateUrl="~/Display_specific_stud_info.aspx" Text="Student info" Value="Student info"></asp:MenuItem>
+                                  <asp:MenuItem NavigateUrl="~/InstPerCourse.aspx" Text="courses instructor" Value="courses instructor"></asp:MenuItem>
+                                  <asp:MenuItem NavigateUrl="~/Questions_Course.aspx" Text="Course questions" Value="Course questions"></asp:MenuItem>
+                                  <asp:MenuItem NavigateUrl="~/student_Exam.aspx" Text="Student Exam" Value="Student Exam"></asp:MenuItem>
+                                  <asp:MenuItem NavigateUrl="~/Student_results.aspx" Text="Student Result" Value="Student Result"></asp:MenuItem>
+                              </Items>
                           </asp:Menu>
                       </td>
                       <td>

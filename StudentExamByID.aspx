@@ -4,12 +4,12 @@
     <table style="width:100%;">
         <tr>
             <td style="width: 78px">
-                <asp:Label ID="Label1" runat="server" Text="Student ID"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Student Name"></asp:Label>
             </td>
             <td style="width: 235px">
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="St_id" DataValueField="St_id" Width="130px">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="Fullname" DataValueField="St_id" Width="130px">
                 </asp:DropDownList>
-                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="SelectStudent" TypeName="BussniessLayerStudents"></asp:ObjectDataSource>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="SelectStudentName" TypeName="BussniessLayerStudents"></asp:ObjectDataSource>
             </td>
             <td>&nbsp;</td>
         </tr>

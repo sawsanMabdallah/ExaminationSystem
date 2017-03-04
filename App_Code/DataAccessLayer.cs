@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
+//using System.Linq;
 using System.Web;
 
 /// <summary>
@@ -12,9 +12,6 @@ public class DataAccessLayer
 {
     static SqlCommand com;
     static SqlConnection con = new SqlConnection("Data Source =.; Initial Catalog = AdvSQL; Integrated Security = True");
-
-
-
     public static DataSet RunSelect(string str)
     {
         com = new SqlCommand();

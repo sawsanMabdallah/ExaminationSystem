@@ -22,6 +22,7 @@ public partial class Students : System.Web.UI.Page
             ObjectDataSource1.InsertParameters["St_phone"].DefaultValue = TextBoxPhone.Text;
             ObjectDataSource1.InsertParameters["St_address"].DefaultValue = TextBoxAddress.Text;
             ObjectDataSource1.InsertParameters["Dept_id"].DefaultValue = DropDownListDept.SelectedValue;
+            ObjectDataSource1.InsertParameters["User_id"].DefaultValue = "NULL";
             ObjectDataSource1.Insert();
         }
     }

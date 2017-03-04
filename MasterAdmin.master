@@ -15,15 +15,15 @@
   </tr>
   <tr> 
     <td background="images/top01.gif" height="23" align="center" class="menu">
-        <asp:HyperLink ID="Home" runat="server">Home</asp:HyperLink>
+        <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/AdminProfile.aspx">Home</asp:HyperLink>
 &nbsp;- 
-        <asp:HyperLink ID="Registration" runat="server">Registration</asp:HyperLink>
+        <asp:HyperLink ID="Registration" runat="server" NavigateUrl="~/Registration.aspx">Registration</asp:HyperLink>
 &nbsp;- 
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Students.aspx">Students</asp:HyperLink>
 &nbsp;- 
-        <asp:HyperLink ID="HyperLink2" runat="server">Instructors</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Instructor.aspx">Instructors</asp:HyperLink>
 &nbsp;- 
-        <asp:HyperLink ID="HyperLink3" runat="server">Departments</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Department.aspx">Departments</asp:HyperLink>
 &nbsp;- 
         <asp:HyperLink ID="HyperLink4" runat="server">Courses</asp:HyperLink>
 &nbsp;- 
@@ -32,6 +32,18 @@
         <asp:HyperLink ID="HyperLink6" runat="server">Question</asp:HyperLink>
 &nbsp;- 
         <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/DeptwithManger.aspx">Departments&amp;It&#39;s Manger</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/StudentResult.aspx">Student Result</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/studentAnswer.aspx">Student Answers</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/StudentExamByDate.aspx">Student Exam By date</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/StudentExamByID.aspx">Student Exam By ID</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/InsSalary.aspx">Instructors Salary</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/AllQuestionsPerCourse.aspx">Questions Per Course</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/GenerateExam.aspx">Generate Exam</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/CorrectiveCourse.aspx">Corrective by course</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/CorrectiveDept.aspx">Corrective by Department</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink17" runat="server">[HyperLink17]</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink18" runat="server">HyperLink</asp:HyperLink>
+        -<asp:HyperLink ID="HyperLink19" runat="server">HyperLink</asp:HyperLink>
       </td>
   </tr>
 </table>

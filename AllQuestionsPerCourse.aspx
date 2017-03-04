@@ -6,22 +6,21 @@
             <td style="width: 105px">
                 <asp:Label ID="Label1" runat="server" Text="Course Name"></asp:Label>
             </td>
-            <td>
+            <td style="width: 371px">
                 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="Crs_name" DataValueField="Crs_id">
                 </asp:DropDownList>
-                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="AllCourse" TypeName="BussniessLayerStudents"></asp:ObjectDataSource>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 105px">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td style="width: 371px">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 105px">&nbsp;</td>
-            <td>
-                <asp:GridView ID="GridView1" runat="server" CellPadding="4" DataSourceID="ObjectDataSource2" ForeColor="#333333" GridLines="None">
+            <td style="width: 371px">
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" DataSourceID="ObjectDataSource2" ForeColor="#333333" GridLines="None" AllowPaging="True" AllowSorting="True">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -34,6 +33,7 @@
                     <SortedDescendingCellStyle BackColor="#E9EBEF" />
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="AllCourse" TypeName="BussniessLayerStudents"></asp:ObjectDataSource>
                 <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="QuestionPerCourse" TypeName="BussniessLayerStudents">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="DropDownList1" Name="Crs_id" PropertyName="SelectedValue" Type="String" />

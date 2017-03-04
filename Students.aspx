@@ -53,6 +53,14 @@
                     <asp:Label ID="Label6" runat="server" Text='<%# Bind("Dept_id") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="User ID">
+                <EditItemTemplate>
+                    <asp:TextBox ID="TextBox5" runat="server" Text='<%# bind("User_id") %>'></asp:TextBox>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Label13" runat="server" Text='<%# bind("User_id") %>'></asp:Label>
+                </ItemTemplate>
+            </asp:TemplateField>
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -76,6 +84,7 @@
             <asp:Parameter Name="St_phone" Type="String" />
             <asp:Parameter Name="St_address" Type="String" />
             <asp:Parameter Name="Dept_id" Type="String" />
+            <asp:Parameter Name="User_id" Type="String" />
         </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="St_id" Type="String" />
@@ -84,6 +93,7 @@
             <asp:Parameter Name="St_phone" Type="String" />
             <asp:Parameter Name="St_address" Type="String" />
             <asp:Parameter Name="Dept_id" Type="String" />
+            <asp:Parameter Name="User_id" Type="String" />
         </UpdateParameters>
     </asp:ObjectDataSource>
     <br />
@@ -160,7 +170,7 @@
         <tr>
             <td style="width: 193px">&nbsp;</td>
             <td style="width: 200px">
-                <asp:Button ID="btn_insert" runat="server" Text="Insert" Width="114px" OnClick="btn_insert_Click" ValidationGroup="v1" />
+                <asp:Button ID="btn_insert" runat="server" Text="Insert" Width="114px" OnClick="btn_insert_Click" ValidationGroup="v1" style="height: 20px" />
             </td>
             <td>&nbsp;</td>
         </tr>

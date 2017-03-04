@@ -35,8 +35,8 @@
     <td valign="top" bgcolor="#FFFFFF">
       <table width="100%" border="0" cellspacing="0" cellpadding="15" class="auto-style1">
         <tr> 
-          <td class="title" height="60" background="images/title_bg.gif" align="right" style="font-size:20px">Welcome
-              <asp:LoginName ID="LoginName1" runat="server" />
+          <td class="title" height="60" background="images/title_bg.gif" align="right" style="font-size:20px">Welcome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <br />
             </td>
         </tr>
         <tr> 
